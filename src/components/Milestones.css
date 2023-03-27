@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+p {
+  margin: 0;
+}
+
+.flex-col-hstart-vstart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.post-milestone-item {
+  transition: all .125s linear;
+  display:none;
+}
+.post-milestone-item:nth-child(-n+4) {
+  display:list-item;
+}
+.post-milestone-item:hover {
+  transform: scale(1.02);
+}
+.personal-milestone-item {
+  transition: all .125s linear;
+  display:none;
+}
+.full-milestone-item {
+  transition: all .125s linear;
+  display:list-item;
+}
+.full-milestone-item:hover {
+  transform: scale(1.02);
+}
+.personal-milestone-item:nth-child(-n+1) {
+  display: list-item;
+}
+.personal-milestone-item:hover {
+  transform: scale(1.04);
+}
+.post-milestone-content {
+  position: relative;
+  border-radius: 8px;
+  background-color: rgba(10, 10, 10, 1);
+  width: 336px;
+  height: 70px;
+  margin-bottom:1.5em;
+  box-shadow: -4px 4px 3px 4px rgba(0,0,0,0.15);
+  transition: all .15s linear;
+}
+.profile-milestone-content {
+  position: relative;
+  border-radius: 8px;
+  background-color: rgba(10, 10, 10, 1);
+  width: 336px;
+  height: 70px;
+  margin-bottom:.75em;
+  box-shadow: 4px 4px 3px 4px rgba(0,0,0,0.15);
+  transition: all .15s linear;
+}
+.profile-milestone-content:hover {
+  box-shadow: 5px 5px 6px 7px rgba(0,0,0,0.175);
+}
+.post-milestone-content:hover {
+ 
+  box-shadow: -5px 5px 6px 7px rgba(0,0,0,0.175);
+}
+.profile-milestone-content:hover .milestone-streak-context {
+  color: white;
+}
+
+.selected-milestone-content {
+  position: relative;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom right,#33b899, hsl(167, 43%, 27%));
+  outline: 4px solid #00523F;
+  width: 336px;
+  height: 70px;
+  margin-bottom:1.5em;
+  box-shadow: 0px 4px 2px 2px rgba(0,0,0,0.1);
+  transition: all .25s linear;
+}
+.selected-milestone-content:hover {
+  position: relative;
+  border-radius: 8px;
+
+  outline: 4px solid #00523F;
+  width: 336px;
+  height: 70px;
+  margin-bottom:1.5em;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 2px 2px rgba(0,0,0,0.1);
+  transition: all .25s linear;
+}
+.milestone-streak {
+  color: rgb(248, 210, 57);
+}
+
+
+.selected-milestone-content .milestone-streak {
+  color: rgb(248, 210, 57);
+}
+
+.selected-milestone-content .milestone-streak-context {
+  color: white;
+}
+
+.milestone-streak {
+  position: absolute;
+  font-size: 10px;
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+  color: rgba(53, 174, 146, 1);
+  width: 77px;
+  white-space: nowrap;
+  height: 12px;
+  word-wrap: break-word;
+}
+
+.milestone-streak-context {
+  font-weight: 400;
+  color: rgba(195, 191, 191, 1);
+}
+
+.profile-milestone-item {
+  position: absolute;
+  top: 20px;
+  width: 294px;
+  height: 30px;
+  margin-left:18px;
+}
+
+.hobbies-music {
+  width: 30px;
+  margin-right: 13px;
+  background-color: rgb(214, 214, 214);
+  border-radius: 5px;
+  height: 100%;
+}
+
+.milestone-item-title {
+  font-size: 15px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  word-wrap: break-word;
+  margin-right: 115px;
+  white-space: nowrap;
+}
+
+.milestone-item-dropdown {
+  width: 27px;
+  height: 27px;
+  margin-top:1px;
+}
+.milestone-item-disabled {
+  display: none;
+}
+
+.milestone-item-context {
+    text-align: left;
+    width: 222px;
+}
+.milestone-page-link {
+  text-decoration: none;
+  color:transparent;
+  background-color: transparent;
+  outline:none;
+  border:none;
+}
+.milestone-page-link:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,51 @@
+.comment-item {
+    position: relative;
+    min-width: 100%;
+    color:white;
+    border:transparent;
+    margin-bottom: .5vh;
+    justify-content: center;
+
+}
+.comment-content {
+    color:white;
+    font-size: 12px;
+    text-align: left;
+    margin-left:2px;
+    display: flex;
+    padding-right: 1vw;
+}
+.comment-wrapper {
+    min-width: 100%;
+    font-family: Inter;
+    display: flex;
+    padding:8px 0px 7px 12px;
+    outline:none;
+
+    background-color:transparent;
+    color:white;
+    font-family: Inter, sans-serif;
+    border:transparent;
+    font-size: 12px;
+    padding-right: 1vw;
+}
+.comment-owner {
+    font-weight: 700;
+    font-style:italic;
+    margin-right:6px;
+}
+.comment-date {
+    color:rgb(122, 122, 122);
+    right:0;
+    margin-right:14px;
+    position: absolute;
+    font-size: 10px;
+
+}
+.comment-context {
+    float:left;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    text-align:start;
+    word-break:break-all;
+}

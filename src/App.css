@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.main-content {
+  background-color: #262E2B;
+  /*background-color: #253833;*/
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 0;
+}
+.content-wrapper {
+  flex:1;
+  flex-direction: row;
+  z-index: 0;
+}
+.hero-container {
+
+  position: absolute;
+  width: 43.75vw;
+  height:43.75vh;
+  left:7.4vw;
+  top:25vh;
+  z-index: 1;
+}
+.header-container {
+  max-width: 44.9vw;
+  height: fit-content;
+}
+.header-text {
+  font-size:24px;
+  line-height: 8px;
+  color:#efefef;
+  font-weight: 300;
+  font-family: 'Gloock', serif;
+  display: inline;
+}
+
+.Morning {
+  font-size:26px;
+  line-height: 12px;
+  font-family: 'Gloock', serif;
+  display: inline;
+  font-weight: 300;
+  color:#f8d239;
+  text-shadow: 0px 4px 2px 2px rgba(0,0,0,0.1);
+}
+.Afternoon {
+  font-size:26px;
+  line-height: 12px;
+  font-family: 'Gloock', serif;
+  display: inline;
+  color:#8eb1f3;
+  font-weight: 300;
+  text-shadow: 0px 4px 2px 2px rgba(0,0,0,0.1);
+}
+.Evening {
+  font-size:26px;
+  line-height: 12px;
+  font-family: 'Gloock', serif;
+  display: inline;
+  color:#f0a080;
+  font-weight: 300;
+  text-shadow: 0px 4px 2px 2px rgba(0,0,0,0.1);
+}
+.Night {
+  color:#9c8ff1;
+  text-shadow: 0px 4px 2px 2px rgba(0,0,0,0.1);
+  font-size:26px;
+  line-height: 12px;
+  font-weight: 300;
+  font-family: 'Gloock', serif;
+  display: inline;
+}
+.header-main-name {
+  width: fit-content;
+  height: fit-content;
+  text-shadow: 2px 4px 2px 2px rgba(0,0,0,0.2);
+ 
+}
+.header-main-context {
+  width: fit-content;
+  height: fit-content;
+  text-shadow: 2px 4px 2px 2px rgba(0,0,0,0.2);
+}
+.seperator {
+  width: 92%;
+  align-self: center;
+  min-height:2px;
+  background-color: transparent;
+}
+.header-name-text {
+  font-size:74px;
+  color:#efefef;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 12px;
+  line-break: loose;
+  font-family: 'gloock', serif;
+  text-shadow: 2px 4px 0px 2px rgba(0,0,0,0.25);
+  transition: all 0.2s linear;
+}
+.header-name-text:hover {
+  color:#35AE92;
+  text-shadow: 2px 4px 0px 0px rgba(0,0,0,0.25);
+  transform: scale(1.05);
+}
+.header-subtext {
+  font-size:28px;
+  color:#efefef;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: 'Rubik', serif;
+  transition: all 0.2s linear;
+}
+.header-subtext:hover {
+  color: #f8d239;
+}
+
+.hero-description {
+  font-size: 23px;
+  color:#efefef;
+  line-height: 34px;
+  font-family: 'rubik', serif;
+}
+.image-container {
+  position: absolute;
+  width: fit-content;
+  right:34.5%;
+  top:18%;
+  z-index: 1;
+}
+.button-container{
+  background-color: transparent;
+  border: none;
+  outline:none;
+  max-height: fit-content;
+  max-width: fit-content;
+}
+.vector-left{
+  right:0;
+  width: 50%;
+  z-index: 1;
+  height:100%;
+  position: absolute;
+}
+
+.vector-middle{
+  right:0;
+  width: 50%;
+  z-index: 2;
+  height:100%;
+  position: absolute;
+}
+.vector-right{
+  right:0;
+  z-index: 3;
+  width: 50%;
+  height:100%;
+  position: absolute;
+}
+.background-left {
+  left:0;
+  z-index:0;
+  position: absolute;
+  height:100%;
+  width: 50%;
+}
+.background-right {
+  z-index: 0;
+  right:0;
+  position: absolute;
+  height:100%;
+  width: 50%;
+}
+
+.ring-top {
+  min-width: 38.5%;
+  max-height: 48%;
+  z-index: 4;
+  right:6%;
+  top:24.5%;
+  transform: scaleX(0.7);
+  position: absolute;
+}
+.ring-center {
+  min-width: 38.5%;
+  max-height: 48%;
+  z-index: 2;
+  right:3.5%;
+  top:27%;
+  transform: scaleX(0.7);
+  position: absolute;
+}
+.ring-bottom {
+  min-width: 38.5%;
+  max-height: 48%;
+  z-index: 1;
+  right:2%;
+  top:30.5%;
+  transform: scaleX(0.7);
+  position: absolute;
+}
+
+.ring-inner {
+  min-width: 38.5%;
+  max-height: 48%;
+  right:2.75%;
+  top:30%;
+  z-index: 1;
+  transform: scaleX(0.7);
+  position: absolute;
+
+}
+.ring-middle {
+  min-width: 38.5%;
+  max-height: 48%;
+  right:4%;
+  top:28%;
+  transform: scaleX(0.7);
+  z-index: 2;
+  position: absolute;
+
+}
+.ring-outer {
+  min-width: 38.5%;
+  max-height: 48%;
+  z-index: 0;
+  right:5.25%;
+  top:26%;
+  transform: scaleX(0.7);
+  z-index: 3;
+  position: absolute;
+
+}
+.top-stack {
+  width: fit-content;
+  height: fit-content;
+}
+.middle-stack {
+  width: fit-content;
+  height: fit-content;
+}
+.bottom-stack {
+  width: fit-content;
+  height: fit-content;
+
+}
