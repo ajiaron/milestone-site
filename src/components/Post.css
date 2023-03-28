@@ -49,8 +49,6 @@
     border-radius: 14px;
     position: relative;
     max-width: 100%;
-
-
   }
   .post-0{
     background-repeat: no-repeat;
@@ -58,10 +56,12 @@
     background-image: linear-gradient(108deg, #4a9685, #3a5b6c);
     min-height:100%;
     z-index: 11;
-    transition: all .15s linear;
     border-radius: 14px;
-    
+    transition: all .15s linear;
     min-width: 100%;
+  }
+  .post-0:hover {
+    transform: scale(1.03);
   }
   .figure-0 {
     border-radius: 14px;
@@ -83,6 +83,9 @@
     transition: all .15s linear;
     border-radius: 14px;
     min-width: 100%;
+  }
+  .post-1:hover {
+    transform: scale(1.03);
   }
   .figure-1 {
     border-radius: 14px;
@@ -106,6 +109,9 @@
     border-radius: 14px;
     min-width: 100%;
   }
+  .post-2:hover {
+    transform: scale(1.03);
+  }
   .figure-2 {
     border-radius: 14px;
     min-height: 100%;
@@ -126,6 +132,9 @@
     transition: all .15s linear;
     border-radius: 14px;
     min-width: 100%;
+  }
+  .post-3:hover {
+    transform: scale(1.03);
   }
   .figure-3 {
     border-radius: 14px;
@@ -148,6 +157,9 @@
     border-radius: 14px;
     min-width: 100%;
   }
+  .post-4:hover {
+    transform: scale(1.03);
+  }
   .figure-4 {
     border-radius: 14px;
     min-height: 100%;
@@ -158,6 +170,9 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-image: url('./layers/discussion.svg');
+  }
+  .post-5:hover {
+    transform: scale(1.03);
   }
   .post-5{
     background-repeat: no-repeat;
@@ -174,10 +189,11 @@
     min-height: 100%;
     min-width: 100%;
     position: absolute;
-    background-position: center;
+    background-position: -.5em;
     box-shadow: 6px 6px 2px 4px rgba(0,0,0,0.15);
     background-repeat: no-repeat;
-    background-image: url('./layers/hightech.svg');
+    background-size: cover;
+    background-image: url('./layers/feedback.svg');
   }
   .mile-post-item {
     padding-top: .875em;
