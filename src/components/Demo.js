@@ -168,7 +168,7 @@ function Demo() {
                           <p className="header-name-title">Take a look.</p>
                         </div>
                         <div className="header-main-context-mid">
-                          <p className="header-subcontent">Keep in touch with family, friends, and mentors through the milestones they're reaching.
+                          <p className="header-subcontent">Keep in touch with family and friends through the milestones they're reaching.
                           </p>
                         </div>
                     </div>

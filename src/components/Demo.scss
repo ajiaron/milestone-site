@@ -2,11 +2,15 @@
 p {
     margin: 0;
   }
+
 html {
   scroll-snap-type: mandatory;
+ 
+
 }
   .main-content {
     height: 100vh;
+
     width:100vw;
     background-color: #253833;
     margin: 0;
@@ -20,6 +24,7 @@ html {
       section {
         flex:none;
         display: flex;
+        zoom:1;
         scroll-snap-align: start;
         max-width: 100vw;
         background-color: #1a1a1a;
@@ -161,35 +166,37 @@ html {
   .hero-wrapper {
     max-width: 43.75vw;
     height:43.75vh;
-    margin-left:8.5vw;
-    margin-top:18.5vh;
+    margin-left:6.5vw;
+    margin-top:16.25vh;
+    transform:scale(0.9);
     z-index: 11;
   }
   .hero-wrapper-mid {
     max-width: 43.75vw;
     height:43.75vh;
-    transform: rotateX(180deg);
-    margin-right: 6vw;
-    margin-top:18vh;
+    transform: rotateX(180deg) scale(0.9);
+    margin-right:3vw;
+    margin-top:23vh;
     right:0;
     z-index: 11;
   }
   .hero-wrapper-low {
     max-width: 43.75vw;
     height:43.75vh;
-    margin-left: 8vw;
+    margin-left: 6vw;
     z-index: 11;
-    margin-top:19vh;
+    margin-top:16vh;
     left:0;
+    transform: scale(0.9);
     z-index: 11;
   }
   .hero-wrapper-contact {
-    max-width: 43.75vw;
+    max-width: 50vw;
     height:43.75vh;
-    transform: rotateX(180deg);
-
-    margin-top:24vh;
-    margin-right: 8vw;
+    transform: rotateX(180deg) scale(0.9);
+    
+    margin-top:28.5vh;
+    margin-right:3.75vw;
     z-index: 11;
   }
   .header-container {
@@ -353,14 +360,14 @@ html {
     font-family: 'Gloock', serif;
   }
   .context-wrapper {
-    margin-top: 12vh;
-    max-width: 40vw;
+    margin-top: 13vh;
+    max-width: 45vw;
 
   }
   .context-wrapper-mid {
-    margin-top: 9vh;
+    margin-top: 10vh;
     margin-right:1vw;
-    max-width: 37.5vw;
+    max-width: 44vw;
   }
   .context-wrapper-contact {
     margin-top: 9vh;
@@ -368,7 +375,7 @@ html {
     max-width: 40vw;
   }
   .hero-description {
-    font-size: 22px;
+    font-size: 21px;
     color:#efefef;
     line-height: 32px;
     font-family: 'rubik', serif;
@@ -410,7 +417,7 @@ html {
     height: 18em;
     position: absolute;
     border-radius: 18em;
-    right:18vw;
+    right:20vw;
     transition:all .5s linear;
     transition-delay: 400ms;
     z-index:0;  
@@ -439,7 +446,7 @@ html {
     position: absolute;
     border-radius: 14em;
     box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.2);
-    bottom:10.5vh;
+    bottom:12vh;
     left:-4vw;
     z-index:0;
 
@@ -488,7 +495,7 @@ html {
     display: flex;
     z-index: 10;
     transform: translateX(200%);
-    margin-right: 12.5vw;
+    margin-right: 12vw;
     transition: all .5s linear;
   }
   .profile-screen-active {
@@ -512,7 +519,7 @@ html {
     z-index: -1;
     border-radius: 29em;
     bottom: 6vh;
-    right: -6vw;
+    right: -7vw;
     position: absolute;
     transition:all 1s linear;
     transition-delay: 200ms;
@@ -526,8 +533,8 @@ html {
     height: 15em;
     border-radius: 16em;
     box-shadow: -2px 2px 0px 2px rgba(0,0,0,0.2);
-    top:14.5vh;
-    right: 16vw;
+    top:16vh;
+    right: 17vw;
     z-index: -1;
 
     transition:all 1s linear;
@@ -571,17 +578,24 @@ html {
     align-items: center;
     display: flex;
     z-index: 10;
-    margin-right: auto;
-    transition:all 1s linear;
-    margin-left:13vw;
+    transition: all 1s linear;
+    margin-left:12vw;
+    -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+    transform: translateX(-200%);
+
   }
   .milestone-screen-active {
     animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-backface-visibility: hidden;
+    transform: translateX(0%);
     animation-name: animate-milestone-screen;
+
   }
   @keyframes animate-milestone-screen {
     from {
-      transform: translateX(-100%);
+      transform: translateX(-200%);
     }
     to {
       transform: translateX(0%);
@@ -591,9 +605,8 @@ html {
     width: 15.5em;
     height: 15.5em;
     border-radius: 15.5em;
-    
-    bottom:8.5vh;
-    right:13.5vw;
+    bottom:10vh;
+    right:15vw;
     z-index:0;
     transition-delay: 200ms;
     background-image: linear-gradient(25deg, #498daf,#829136);
@@ -624,8 +637,8 @@ html {
     border-radius: 20em;
     transition-delay: 400ms;
     box-shadow: 2px -2px 0px 2px rgba(0,0,0,0.2);
-    top:3.5vh;
-    right:-8vw;
+    top:4vh;
+    right:-10vw;
     position: absolute;
     z-index:0;
     background-image: linear-gradient(45deg, #955ec9,#9d263a);
@@ -672,7 +685,7 @@ html {
     z-index: 10;
     transition: all 1s;
     margin-right:13vw;
-    margin-top:-2vh;
+    margin-top:-3vh;
 
   }
 
@@ -711,15 +724,20 @@ html {
   }
   
   .screen-wrapper-top {
-    max-height: 99.9vh;
+    min-height: 99.9vh;
     margin-left: auto;
-    align-self: center;
+    transform: scale(0.9) translateY(-40px);
+
+  
+    align-items: center;
     min-width: fit-content;
   }
   .screen-wrapper-mid {
+
     align-items: center;
-    transform: rotateX(180deg);
+    transform: rotateX(180deg) scale(0.9) translateY(-44px);
     max-height: 99.9vh;
+
     margin-right: auto;
     min-width: fit-content;
   }
@@ -728,13 +746,16 @@ html {
     align-items: center;
     align-self: center;
     margin-left: auto;
+    transform: scale(0.9) translateY(-40px);
     min-width: fit-content;
   }
   .screen-wrapper-contact {
     max-height: 99.9vh;
     align-items: center;
     align-self: center;
-    margin-left:10vw;
+    margin-left:8vw;
+    margin-right:2vw;
+    transform: scale(0.9);
     margin-right: auto;
     min-width: fit-content;
   }

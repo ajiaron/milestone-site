@@ -34,22 +34,150 @@
   padding-top: 0.25em;
   padding-bottom: 1.5em;
 }
+.post-wrapper {
+
+}
   .sample-image-wrapper {
     margin-top: 1.15em;
     height: 348px;
     align-items: center;
     justify-content: center;
     flex:1;
-   
-    
-
     margin-bottom: 1em;
     padding-left: 1.625em;
     padding-right: 1.625em;
-
-    border-radius: 12px;
+    border-radius: 14px;
     position: relative;
     max-width: 100%;
+
+
+  }
+  .post-0{
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(108deg, #4a9685, #3a5b6c);
+    min-height:100%;
+    z-index: 11;
+    transition: all .15s linear;
+    border-radius: 14px;
+    
+    min-width: 100%;
+  }
+  .figure-0 {
+    border-radius: 14px;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    background-position:center;
+    box-shadow: 6px 6px 2px 4px rgba(0,0,0,0.15);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-image: url('./layers/relax.svg');
+  }
+  .post-1{
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(112deg, #bacd78, rgb(44, 91, 65));
+    min-height:100%;
+    z-index: 11;
+    transition: all .15s linear;
+    border-radius: 14px;
+    min-width: 100%;
+  }
+  .figure-1 {
+    border-radius: 14px;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    background-position: center;
+    box-shadow: 6px 6px 2px 4px rgba(0,0,0,0.15);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url('./layers/hightech.svg');
+  }
+  .post-2{
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(112deg, #a04b79, #554264);
+
+    min-height:100%;
+    z-index: 11;
+    transition: all .15s linear;
+    border-radius: 14px;
+    min-width: 100%;
+  }
+  .figure-2 {
+    border-radius: 14px;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    background-position:0.25em -1.25em;
+    box-shadow: 6px 6px 2px 4px rgba(0,0,0,0.15);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./layers/alonetime.svg');
+  }
+  .post-3{
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(108deg, #d6d28c, #6b613b);
+    min-height:100%;
+    z-index: 11;
+    transition: all .15s linear;
+    border-radius: 14px;
+    min-width: 100%;
+  }
+  .figure-3 {
+    border-radius: 14px;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    background-position: center;
+    box-shadow: 6px 6px 2px 4px rgba(0,0,0,0.15);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./layers/study.svg');
+  }
+  .post-4{
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(108deg, #c57b8e, #5e3a42);
+    min-height:100%;
+    z-index: 11;
+    transition: all .15s linear;
+    border-radius: 14px;
+    min-width: 100%;
+  }
+  .figure-4 {
+    border-radius: 14px;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    background-position: center;
+    box-shadow: 6px 6px 2px 4px rgba(0,0,0,0.15);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url('./layers/discussion.svg');
+  }
+  .post-5{
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(108deg, #4a7b96, #0f4865);
+    min-height:100%;
+    z-index: 11;
+    transition: all .15s linear;
+    border-radius: 14px;
+    min-width: 100%;
+  }
+  .figure-5 {
+    border-radius: 14px;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    background-position: center;
+    box-shadow: 6px 6px 2px 4px rgba(0,0,0,0.15);
+    background-repeat: no-repeat;
+    background-image: url('./layers/hightech.svg');
   }
   .mile-post-item {
     padding-top: .875em;

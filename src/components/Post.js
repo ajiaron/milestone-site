@@ -29,8 +29,18 @@ export default function Post(props) {
           </div>
         </div>
 
-            <div className={props.src?'sample-image-wrapper':`image-wrapper`}>
-              {props.src? <img src={props.src} alt='samplepost' className='milestone-post-image'/>:''}
+            <div className={`sample-image-wrapper`} onClick={()=> {console.log(props.index)}}>
+    
+
+      
+            <div className={`post-${props.index}`}>
+                <div className={`figure-${props.index}`}>
+            
+
+                </div>
+              </div>
+
+              {/*props.src? <img src={props.src} alt='samplepost' className='milestone-post-image'/>:''*/}
             </div>   
  
         <div className='actionbar-wrapper'>   

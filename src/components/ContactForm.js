@@ -19,7 +19,7 @@ function ContactForm() {
           });
       };
     return (
-        <form className="contact-form-screen" ref={formRef} onSubmit={(e)=> {sendEmail(e)}}>
+        <form className="contact-form-screen" ref={formRef} onSubmit={(e)=> {sendEmail(e)}} name='contact' data-netlify='true'>
                <div className="contact-form-name">
                 <p className='contact-form-text'>Your Name</p>
                 <input className='contact-name-input' placeholder='Enter your name...' tyoe='text' name="user_name"/>
